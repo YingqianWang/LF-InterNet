@@ -1,8 +1,8 @@
 # LF-InterNet
-***Repository for "Spatial-Angular Interaction for Light Field Image Super-Resolution". [<a href="https://arxiv.org/pdf/1912.07849v2.pdf">PDF</a>]*** <br><br>
+***Repository of "Spatial-Angular Interaction for Light Field Image Super-Resolution". [<a href="https://arxiv.org/pdf/1912.07849v2.pdf">PDF</a>]*** <br><br>
 
 ### <img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/Thumbnail.jpg" width="600">
-***our LF-InterNet outperforms existing SR methods by a large margin in terms of PSNR and SSIM*** <br><br>
+***our LF-InterNet outperforms existing SISR and LF image SR methods by a large margin in terms of PSNR and SSIM.*** <br><br>
 
 ## Network Architecture
 <img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/Network.jpg" width="700">
