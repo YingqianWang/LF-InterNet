@@ -1,4 +1,3 @@
-# LF-InterNet
 ***Repository of "Spatial-Angular Interaction for Light Field Image Super-Resolution". [<a href="https://arxiv.org/pdf/1912.07849v2.pdf">PDF</a>]*** <br>
 
 ### <img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/Thumbnail.jpg" width="600">
@@ -31,5 +30,3 @@
   year={2019}<br>
 }<br>
 
-## Contact
-You can contact us at ***wangyingqian16@nudt.edu.cn*** for any question about this work. <br>
