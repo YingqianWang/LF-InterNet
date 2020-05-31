@@ -1,11 +1,12 @@
-***PyTorch implementation of "Spatial-Angular Interaction for Light Field Image Super-Resolution". arXiv 2019. [<a href="https://arxiv.org/pdf/1912.07849v2.pdf">PDF</a>]*** <br>
+***PyTorch implementation of LF-InterNet.<br> 
+"Spatial-Angular Interaction for Light Field Image Super-Resolution", arXiv 2019. [<a href="https://arxiv.org/pdf/1912.07849v2.pdf">PDF</a>]*** <br>
 
 ## Overview
-<img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/Network.jpg" width="600">
-***Fig. 1: An overview of our LF-InterNet***<br><br>
+<img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/Network.jpg" width="800"><br>
+#### Fig. 1: An overview of our LF-InterNet.
 
-<img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/SFEAFE.jpg" width="400"><br>
-***Fig. 2: An illustration of angular feature extractor (AFE) and spatial feature extractor (SFE).***<br><br>
+<br><br><img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/SFEAFE.jpg" width="400"><br>
+#### Fig. 2: An illustration of angular feature extractor (AFE) and spatial feature extractor (SFE).<br><br>
 
 ## Requirement
 * **PyTorch 1.3.0, torchvision 0.4.1. The code is tested with python=3.7, cuda=9.0.**
