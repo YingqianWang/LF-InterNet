@@ -4,7 +4,7 @@
 <img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/Network.jpg" width="800"><br>
 #### Fig. 1: An overview of our LF-InterNet.
 
-<br><br><img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/SFEAFE.jpg" width="400"><br>
+<br><br><img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/SFEAFE.jpg" width="600"><br>
 #### Fig. 2: An illustration of angular feature extractor (AFE) and spatial feature extractor (SFE).<br><br>
 
 ## Requirement
@@ -38,13 +38,13 @@ Training codes will be released soon.
 
 ## Citiation
 ```
-@article{LF-InterNet,<br>
-  title={Spatial-Angular Interaction for Light Field Image Super-Resolution},<br>
-  author={Wang, Yingqian and Wang, Longguang and Yang, Jungang and An, Wei and Yu, Jingyi and Guo, Yulan},<br>
-  journal={arXiv preprint arXiv:1912.07849},<br>
-  year={2019}<br>
-}<br>
+@article{LF-InterNet,
+  title={Spatial-Angular Interaction for Light Field Image Super-Resolution},
+  author={Wang, Yingqian and Wang, Longguang and Yang, Jungang and An, Wei and Yu, Jingyi and Guo, Yulan},
+  journal={arXiv preprint arXiv:1912.07849},
+  year={2019}
+}
 ```
 
 ## Contact
-**Please contact *Yingqian Wang* (wangyingqian16@nudt.edu.cn) for any question about this work.**
+**Please contact *Yingqian Wang* (wangyingqian16@nudt.edu.cn) for any question regarding this work.**
