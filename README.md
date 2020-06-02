@@ -15,8 +15,8 @@
 Training codes will be released soon.
 
 ## Test
-* **Download the test sets and unzip them to `./data`. Here, we provide a demo test set (<a href="https://yingqianwang.github.io/homepage/">data_demo.zip</a>) which only includes one test scene, and we also provide the full test set (<a href="https://yingqianwang.github.io/homepage/">data.zip</a>) which is used in our paper.** 
-* **Download our pretrained models (<a href="https://yingqianwang.github.io/homepage/">log.zip</a>) and unzip them to `./log`.**
+* **Download the test sets and unzip them to `./data`. Here, we provide a demo test set (<a href="https://wyqdatabase.s3-us-west-1.amazonaws.com/data_demo.zip">data_demo.zip</a>) which only includes one test scene, and we also provide the full test set (<a href="https://wyqdatabase.s3-us-west-1.amazonaws.com/data.zip">data.zip</a>) which is used in our paper.** 
+* **Download our pretrained models (<a href="https://wyqdatabase.s3-us-west-1.amazonaws.com/log.zip">log.zip</a>) and unzip them to `./log`.**
 * **Run `GenerateDataForTest.m` to generate test data.**
 * **Run `test.py` to perform a demo inference. Note that, the selected pretrained model should match the generated input data and the preset network architecture. Initial results (`.mat` files) will be saved to `./results`.**
 * **Run `evaluation.m` to calculate PSNR and SSIM scores and transform initial results (`.mat` files) into `.png` images.**
