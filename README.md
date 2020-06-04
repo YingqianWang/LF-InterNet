@@ -22,21 +22,22 @@ Training codes will be released soon.
 * **Run `evaluation.m` to calculate PSNR and SSIM scores and transform initial results (`.mat` files) into `.png` images.**
 
 ## Quantitative Results
-<img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/Quantitative.jpg" width="800"><br>
+<img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/Quantitative.jpg" width="1000"><br>
 <br>
 ## Qualitative Results
-<img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/Qualitative.jpg" width="800"><br>
+<img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/Qualitative.jpg" width="1000"><br>
 
 ## Efficiency
-<img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/Efficiency.jpg" width="800"><br>
+<img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/Efficiency.jpg" width="1000"><br>
 
 ## Performance w.r.t. Perspectives
-<img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/PwrtP.jpg" width="800"><br>
+<img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/PwrtP.jpg" width="1000"><br>
 
 ## Performance Under Real-World Degradation
-<img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/VisualReal.jpg" width="800"><br>
+<img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/VisualReal.jpg" width="1000"><br>
 
 ## Citiation
+**If you find this work helpful, please consider to cite the following paper:**
 ```
 @article{LF-InterNet,
   title={Spatial-Angular Interaction for Light Field Image Super-Resolution},
@@ -47,4 +48,4 @@ Training codes will be released soon.
 ```
 
 ## Contact
-**Please contact *Yingqian Wang* (wangyingqian16@nudt.edu.cn) for any question regarding this work.**
+**Any question regarding this work can be addressed to wangyingqian16@nudt.edu.cn.**
