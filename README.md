@@ -37,7 +37,7 @@ Training codes will be released soon.
 <img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/VisualReal.jpg" width="1000"><br>
 
 ## Citiation
-**If you find this work helpful, please consider to cite the following paper:**
+**If you find this work helpful, please consider citing the following paper:**
 ```
 @article{LF-InterNet,
   title={Spatial-Angular Interaction for Light Field Image Super-Resolution},
