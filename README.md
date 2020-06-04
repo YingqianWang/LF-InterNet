@@ -1,4 +1,8 @@
-**PyTorch implementation of "Spatial-Angular Interaction for Light Field Image Super-Resolution", *arXiv 2019*. [<a href="https://arxiv.org/pdf/1912.07849v2.pdf">PDF</a>]** <br>
+#### PyTorch implementation of "Spatial-Angular Interaction for Light Field Image Super-Resolution", *arXiv 2019*.
+
+#### Note: We have revised the paper and compared *LF-InterNet* to <a href="https://github.com/jingjin25/LFSSR-ATO">LF-ATO</a> (CVPR2020). See details in our new arXiv version. [<a href="https://yingqianwang.github.io/homepage/">PDF</a>]
+
+
 
 ## Overview
 <img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/Network.jpg" width="800"><br>
