@@ -1,6 +1,4 @@
-#### PyTorch implementation of "Spatial-Angular Interaction for Light Field Image Super-Resolution", *ECCV 2020*.
-
-#### Note: We have revised the paper and compared *LF-InterNet* to <a href="https://github.com/jingjin25/LFSSR-ATO">LF-ATO</a> (CVPR2020). See details in the current version. [<a href="https://arxiv.org/pdf/1912.07849.pdf">arXiv</a>]
+#### PyTorch implementation of "Spatial-Angular Interaction for Light Field Image Super-Resolution", *ECCV 2020*. [<a href="https://arxiv.org/pdf/1912.07849.pdf">arXiv</a>]
 
 
 
@@ -43,11 +41,11 @@ Training codes will be released soon.
 ## Citiation
 **If you find this work helpful, please consider citing the following paper:**
 ```
-@article{LF-InterNet,
-  title={Spatial-Angular Interaction for Light Field Image Super-Resolution},
-  author={Wang, Yingqian and Wang, Longguang and Yang, Jungang and An, Wei and Yu, Jingyi and Guo, Yulan},
-  journal={arXiv preprint arXiv:1912.07849},
-  year={2019}
+@InProceedings{LF-InterNet,
+  author    = {Wang, Yingqian and Wang, Longguang and Yang, Jungang and An, Wei and Yu, Jingyi and Guo, Yulan},
+  title     = {Spatial-Angular Interaction for Light Field Image Super-Resolution},
+  booktitle = {European Conference on Computer Vision (ECCV)},
+  year      = {2020},
 }
 ```
 
