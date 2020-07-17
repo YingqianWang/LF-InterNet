@@ -14,29 +14,11 @@
 * **Matlab (For training/test data generation and performance evaluation)**
 
 ## Train
-Training codes will be released soon.
 
-## Test
-* **Download the test sets and unzip them to `./data`. Here, we provide a demo test set (<a href="https://wyqdatabase.s3-us-west-1.amazonaws.com/data_demo.zip">data_demo.zip</a>) which only includes one test scene, and we also provide the full test set (<a href="https://wyqdatabase.s3-us-west-1.amazonaws.com/data.zip">data.zip</a>) which is used in our paper.** 
-* **Download our pretrained models (<a href="https://wyqdatabase.s3-us-west-1.amazonaws.com/log.zip">log.zip</a>) and unzip them to `./log`.**
-* **Run `GenerateDataForTest.m` to generate test data.**
-* **Run `test.py` to perform a demo inference. Note that, the selected pretrained model should match the generated input data and the preset network architecture. Initial results (`.mat` files) will be saved to `./results`.**
-* **Run `evaluation.m` to calculate PSNR and SSIM scores and transform initial results (`.mat` files) into `.png` images.**
+* **Download the train datasets from Baidu Drive (will be released soon) and unzip them to `./Datasets`.** 
+* **Run `GenerateTrainingData.m` to generate training data.**
+* **Run `train.py` to perform network training. Note that, the training settings in `train.py` should match the generated training data. Checkpoint models will be saved to `./log`.**
 
-## Quantitative Results
-<img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/Quantitative.jpg" width="1000"><br>
-<br>
-## Qualitative Results
-<img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/Qualitative.jpg" width="1000"><br>
-
-## Efficiency
-<img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/Efficiency.jpg" width="1000"><br>
-
-## Performance w.r.t. Perspectives
-<img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/PwrtP.jpg" width="1000"><br>
-
-## Performance Under Real-World Degradation
-<img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/VisualReal.jpg" width="1000"><br>
 
 ## Citiation
 **If you find this work helpful, please consider citing the following paper:**
