@@ -14,7 +14,7 @@
 * **Matlab (For training/test data generation and performance evaluation)**
 
 ## Train
-**Please switch to the [*LF-InterNet_train*](https://github.com/YingqianWang/LF-InterNet/tree/LF-InterNet_train) branch for details.**
+**Please switch to [*LF-InterNet_train*](https://github.com/YingqianWang/LF-InterNet/tree/LF-InterNet_train) for details.**
 
 ## Test
 * **Download the test sets and unzip them to `./data`. Here, we provide a demo test set (<a href="https://wyqdatabase.s3-us-west-1.amazonaws.com/data_demo.zip">data_demo.zip</a>) which only includes one test scene, and we also provide the full test set (<a href="https://wyqdatabase.s3-us-west-1.amazonaws.com/data.zip">data.zip</a>) which is used in our paper.** 
