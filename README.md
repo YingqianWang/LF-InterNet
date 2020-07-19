@@ -5,7 +5,7 @@
 * **Matlab (For training data generation)**
 
 ## Train
-* **Download the train datasets from Baidu Drive (will be released soon) and unzip them to `./Datasets`.** 
+* **Download the train datasets via [Baidu Drive](https://pan.baidu.com/s/1pfpCkqdvXsS7KnQmpwt6_Q) (Key: NUDT) and unzip them to `./Datasets`.** 
 * **Run `GenerateTrainingData.m` to generate training data.**
 * **Run `train.py` to perform network training. Note that, the training settings in `train.py` should match the generated training data. Checkpoint models will be saved to `./log`.**
 
