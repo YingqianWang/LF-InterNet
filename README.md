@@ -1,4 +1,4 @@
-#### PyTorch implementation of "Spatial-Angular Interaction for Light Field Image Super-Resolution", *ECCV 2020*. [<a href="https://arxiv.org/pdf/1912.07849.pdf">arXiv</a>]
+#### PyTorch implementation of "Spatial-Angular Interaction for Light Field Image Super-Resolution", *ECCV 2020*. [<a href="https://arxiv.org/pdf/1912.07849.pdf">PDF</a>][<a href="https://wyqdatabase.s3-us-west-1.amazonaws.com/LF-InterNet.mp4">Presentation(English)</a>]
 
 
 
