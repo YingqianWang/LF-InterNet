@@ -34,7 +34,7 @@ def train(train_loader, cfg):
 
     net = InterNet(angRes=5, n_groups=cfg.n_groups, n_blocks=cfg.n_blocks,
                    channels=64, upscale_factor=cfg.upscale_factor).to(cfg.device)
-
+    net.apply(weights_init_xavier)
     cudnn.benchmark = True
 
 
@@ -99,10 +99,17 @@ def save_ckpt(state, save_path='./log', filename='checkpoint.pth.tar'):
     torch.save(state, os.path.join(save_path,filename))
 
 
+def weights_init_xavier(m):
+    classname = m.__class__.__name__
+    if classname.find('Conv2d') != -1:
+        torch.nn.init.xavier_normal_(m.weight.data)
+
+
 def main(cfg):
     train_set = TrainSetLoader(dataset_dir=cfg.trainset_dir)
     train_loader = DataLoader(dataset=train_set, num_workers=6, batch_size=cfg.batch_size, shuffle=True)
     train(train_loader, cfg)
+
 
 if __name__ == '__main__':
     cfg = parse_args()
