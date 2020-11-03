@@ -45,6 +45,7 @@
   author    = {Wang, Yingqian and Wang, Longguang and Yang, Jungang and An, Wei and Yu, Jingyi and Guo, Yulan},
   title     = {Spatial-Angular Interaction for Light Field Image Super-Resolution},
   booktitle = {European Conference on Computer Vision (ECCV)},
+  pages     = {290-308},
   year      = {2020},
 }
 ```
