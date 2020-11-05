@@ -4,6 +4,17 @@ import torch.nn as nn
 
 class InterNet(nn.Module):
     def __init__(self, angRes, n_blocks, n_layers, channels, upscale_factor):
+        """
+        Initialize the layers.
+
+        Args:
+            self: (todo): write your description
+            angRes: (todo): write your description
+            n_blocks: (int): write your description
+            n_layers: (list): write your description
+            channels: (list): write your description
+            upscale_factor: (float): write your description
+        """
         super(InterNet, self).__init__()
         # Feature Extraction
         self.AngFE = nn.Sequential(
@@ -17,6 +28,13 @@ class InterNet(nn.Module):
         self.ReconBlock = ReconBlock(angRes, channels, upscale_factor)
 
     def forward(self, x):
+        """
+        Forward forward forward forward.
+
+        Args:
+            self: (todo): write your description
+            x: (todo): write your description
+        """
         xa = self.AngFE(x)
         xs = self.SpaFE(x)
         buffer_a, buffer_s = self.CascadeInterBlock(xa, xs)
@@ -27,6 +45,14 @@ class InterNet(nn.Module):
 
 class make_chains(nn.Module):
     def __init__(self, angRes, channels):
+        """
+        Initialize the network.
+
+        Args:
+            self: (todo): write your description
+            angRes: (todo): write your description
+            channels: (list): write your description
+        """
         super(make_chains, self).__init__()
 
         self.Spa2Ang = nn.Conv2d(channels, channels, kernel_size=int(angRes), stride=int(angRes), padding=0, bias=False)
@@ -40,6 +66,14 @@ class make_chains(nn.Module):
         self.ReLU = nn.ReLU(inplace=True)
 
     def forward(self, xa, xs):
+        """
+        Implemented forward algorithm.
+
+        Args:
+            self: (todo): write your description
+            xa: (todo): write your description
+            xs: (list): write your description
+        """
         buffer_ang1 = xa
         buffer_ang2 = self.ReLU(self.Spa2Ang(xs))
         buffer_spa1 = xs
@@ -53,6 +87,15 @@ class make_chains(nn.Module):
 
 class InterBlock(nn.Module):
     def __init__(self, angRes, n_layers, channels):
+        """
+        Initialize the module.
+
+        Args:
+            self: (todo): write your description
+            angRes: (todo): write your description
+            n_layers: (list): write your description
+            channels: (list): write your description
+        """
         super(InterBlock, self).__init__()
         modules = []
         self.n_layers = n_layers
@@ -61,6 +104,14 @@ class InterBlock(nn.Module):
         self.chained_layers = nn.Sequential(*modules)
 
     def forward(self, xa, xs):
+        """
+        Calculate the graph.
+
+        Args:
+            self: (todo): write your description
+            xa: (todo): write your description
+            xs: (list): write your description
+        """
         buffer_a = xa
         buffer_s = xs
         for i in range(self.n_layers):
@@ -72,6 +123,16 @@ class InterBlock(nn.Module):
 
 class CascadeInterBlock(nn.Module):
     def __init__(self, angRes, n_blocks, n_layers, channels):
+        """
+        Initialize blocks.
+
+        Args:
+            self: (todo): write your description
+            angRes: (todo): write your description
+            n_blocks: (int): write your description
+            n_layers: (list): write your description
+            channels: (list): write your description
+        """
         super(CascadeInterBlock, self).__init__()
         self.n_blocks = n_blocks
         body = []
@@ -79,6 +140,14 @@ class CascadeInterBlock(nn.Module):
             body.append(InterBlock(angRes, n_layers, channels))
         self.body = nn.Sequential(*body)
     def forward(self, buffer_a, buffer_s):
+        """
+        Forward forward forward.
+
+        Args:
+            self: (todo): write your description
+            buffer_a: (todo): write your description
+            buffer_s: (todo): write your description
+        """
         out_a = []
         out_s = []
         for i in range(self.n_blocks):
@@ -90,6 +159,15 @@ class CascadeInterBlock(nn.Module):
 
 class BottleNeck(nn.Module):
     def __init__(self, angRes, n_blocks, channels):
+        """
+        Initialize channel.
+
+        Args:
+            self: (todo): write your description
+            angRes: (todo): write your description
+            n_blocks: (int): write your description
+            channels: (list): write your description
+        """
         super(BottleNeck, self).__init__()
 
         self.AngBottle = nn.Conv2d(n_blocks*channels, channels, kernel_size=1, stride=1, padding=0, bias=False)
@@ -102,6 +180,14 @@ class BottleNeck(nn.Module):
         self.ReLU = nn.ReLU(inplace=True)
 
     def forward(self, xa, xs):
+        """
+        Implement forward operator.
+
+        Args:
+            self: (todo): write your description
+            xa: (todo): write your description
+            xs: (list): write your description
+        """
         xa = self.ReLU(self.AngBottle(xa))
         xs = torch.cat((xs, self.Ang2Spa(xa)), 1)
         out = self.ReLU(self.SpaBottle(xs))
@@ -110,6 +196,15 @@ class BottleNeck(nn.Module):
 
 class ReconBlock(nn.Module):
     def __init__(self, angRes, channels, upscale_factor):
+        """
+        Initialize the channel.
+
+        Args:
+            self: (todo): write your description
+            angRes: (todo): write your description
+            channels: (list): write your description
+            upscale_factor: (float): write your description
+        """
         super(ReconBlock, self).__init__()
         self.PreConv = nn.Conv2d(channels, channels * upscale_factor ** 2, kernel_size=3, stride=1,
                                  dilation=int(angRes), padding=int(angRes), bias=False)
@@ -118,6 +213,13 @@ class ReconBlock(nn.Module):
         self.angRes = angRes
 
     def forward(self, x):
+        """
+        Forward forward forward input.
+
+        Args:
+            self: (todo): write your description
+            x: (todo): write your description
+        """
         buffer = self.PreConv(x)
         bufferSAI_LR = MacroPixel2SAI(buffer, self.angRes)
         bufferSAI_HR = self.PixelShuffle(bufferSAI_LR)
@@ -126,6 +228,13 @@ class ReconBlock(nn.Module):
 
 
 def MacroPixel2SAI(x, angRes):
+    """
+    Name :
+
+    Args:
+        x: (todo): write your description
+        angRes: (todo): write your description
+    """
     out = []
     for i in range(angRes):
         out_h = []
