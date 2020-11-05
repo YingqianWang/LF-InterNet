@@ -10,6 +10,11 @@ import torch.backends.cudnn as cudnn
 
 
 def main():
+    """
+    Main function.
+
+    Args:
+    """
 
     dir_images = './input/'
     dir_save_path = './Results/'
