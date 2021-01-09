@@ -3,10 +3,10 @@
 
 
 ## Overview
-<img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/Network.jpg" width="800"><br>
+<img src="Figs/Network.jpg" width="800"><br>
 #### Fig. 1: An overview of our LF-InterNet.
 
-<br><br><img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/SFEAFE.jpg" width="600"><br>
+<br><br><img src="Figs/SFEAFE.jpg" width="600"><br>
 #### Fig. 2: An illustration of angular feature extractor (AFE) and spatial feature extractor (SFE).<br><br>
 
 ## Requirement
@@ -24,19 +24,19 @@
 * **Run `evaluation.m` to calculate PSNR and SSIM scores and transform initial results (`.mat` files) into `.png` images.**
 
 ## Quantitative Results
-<img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/Quantitative.jpg" width="1000"><br>
+<img src="Figs/Quantitative.jpg" width="1000"><br>
 <br>
 ## Qualitative Results
-<img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/Qualitative.jpg" width="1000"><br>
+<img src="Figs/Qualitative.jpg" width="1000"><br>
 
 ## Efficiency
-<img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/Efficiency.jpg" width="1000"><br>
+<img src="Figs/Efficiency.jpg" width="1000"><br>
 
 ## Performance w.r.t. Perspectives
-<img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/PwrtP.jpg" width="1000"><br>
+<img src="Figs/PwrtP.jpg" width="1000"><br>
 
 ## Performance Under Real-World Degradation
-<img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/VisualReal.jpg" width="1000"><br>
+<img src="Figs/VisualReal.jpg" width="1000"><br>
 
 ## Citiation
 **If you find this work helpful, please consider citing the following paper:**
