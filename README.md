@@ -1,14 +1,5 @@
 #### PyTorch implementation of "Spatial-Angular Interaction for Light Field Image Super-Resolution", *ECCV 2020*. [<a href="https://arxiv.org/pdf/1912.07849.pdf">PDF</a>] [<a href="https://wyqdatabase.s3-us-west-1.amazonaws.com/LF-InterNet.mp4">Presentation</a>]
 
-
-
-## Overview
-<img src="Figs/Network.jpg" width="800"><br>
-#### Fig. 1: An overview of our LF-InterNet.
-
-<br><br><img src="Figs/SFEAFE.jpg" width="600"><br>
-#### Fig. 2: An illustration of angular feature extractor (AFE) and spatial feature extractor (SFE).<br><br>
-
 ## Requirement
 * **PyTorch 1.3.0, torchvision 0.4.1. The code is tested with python=3.7, cuda=9.0.**
 * **Matlab (For training/test data generation and performance evaluation)**
@@ -22,21 +13,6 @@
 * **Run `GenerateDataForTest.m` to generate test data.**
 * **Run `test.py` to perform a demo inference. Note that, the selected pretrained model should match the generated input data and the preset network architecture. Initial results (`.mat` files) will be saved to `./results`.**
 * **Run `evaluation.m` to calculate PSNR and SSIM scores and transform initial results (`.mat` files) into `.png` images.**
-
-## Quantitative Results
-<img src="Figs/Quantitative.jpg" width="1000"><br>
-<br>
-## Qualitative Results
-<img src="Figs/Qualitative.jpg" width="1000"><br>
-
-## Efficiency
-<img src="Figs/Efficiency.jpg" width="1000"><br>
-
-## Performance w.r.t. Perspectives
-<img src="Figs/PwrtP.jpg" width="1000"><br>
-
-## Performance Under Real-World Degradation
-<img src="Figs/VisualReal.jpg" width="1000"><br>
 
 ## Citiation
 **If you find this work helpful, please consider citing the following paper:**
