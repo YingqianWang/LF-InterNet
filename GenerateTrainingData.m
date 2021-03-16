@@ -6,7 +6,7 @@ clc;
 angRes = 5;             % Angular Resolution, options, e.g., 3, 5, 7, 9. Default: 5
 patchsize = 64;         % Spatial resolution of each SAI patch, default: 64
 stride = 32;            % stride between two patches, default: 32
-factor = 4;             % SR factor
+factor = 2;             % SR factor
 downRatio = 1/factor;
 sourceDataPath = './Datasets/';
 sourceDatasets = dir(sourceDataPath);
