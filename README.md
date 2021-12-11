@@ -1,4 +1,5 @@
-### PyTorch implementation of our [ECCV 2020](https://arxiv.org/pdf/1912.07849.pdf) paper: "Spatial-Angular Interaction for Light Field Image Super-Resolution".
+# LF-InterNet
+**This is the PyTorch implementation of the method in our paper "Spatial-Angular Interaction for Light Field Image Super-Resolution", [*ECCV 2020*](https://arxiv.org/pdf/1912.07849.pdf).**
 <br>
 <p align="center"> <a href="https://wyqdatabase.s3-us-west-1.amazonaws.com/LF-InterNet.mp4"><img src="Figs/Video-InterNet.png" width="80%"></a> </p><br>
 
