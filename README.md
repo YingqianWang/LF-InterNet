@@ -1,4 +1,7 @@
-#### Training codes of "Spatial-Angular Interaction for Light Field Image Super-Resolution", *ECCV 2020*. [<a href="https://arxiv.org/pdf/1912.07849.pdf">PDF</a>] [<a href="https://wyqdatabase.s3-us-west-1.amazonaws.com/LF-InterNet.mp4">Presentation</a>]
+#### Training codes of our [ECCV 2020](https://arxiv.org/pdf/1912.07849.pdf) paper: "Spatial-Angular Interaction for Light Field Image Super-Resolution".
+
+## News:
+* **2021-12-11**: We recommend our newly-released repository [BasicLFSR](https://github.com/ZhengyuLiang24/BasicLFSR) for the implementation of our LF-InterNet. [BasicLFSR](https://github.com/ZhengyuLiang24/BasicLFSR) is an open-source and easy-to-use toolbox for LF image SR. The codes of several milestone methods (e.g., LFSSR, LF-ATO, LF-InterNet, LF-DFnet) have been implemented (retrained) in a unified framework in [BasicLFSR](https://github.com/ZhengyuLiang24/BasicLFSR).
 
 ## Requirement
 * **PyTorch 1.3.0, torchvision 0.4.1. The code is tested with python=3.7, cuda=9.0.**
