@@ -62,4 +62,4 @@ Please switch to [*LF-InterNet_train*](https://github.com/YingqianWang/LF-InterN
 ```
 
 ## Contact
-Any question regarding this work can be addressed to wangyingqian16@nudt.edu.cn.
+Any question regarding this work can be addressed to [yingqian.wang@outlook.com](yingqian.wang@outlook.com).
