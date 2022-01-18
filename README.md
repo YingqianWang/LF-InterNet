@@ -4,7 +4,7 @@
 <br>
 <p align="center"> <a href="https://wyqdatabase.s3-us-west-1.amazonaws.com/LF-InterNet.mp4"><img src="https://raw.github.com/YingqianWang/LF-InterNet/master/Figs/demo-LF-InterNet.png" width="80%"></a> </p><br>
 
-#### News: We recommend our newly-released repository [*BasicLFSR*](https://github.com/ZhengyuLiang24/BasicLFSR) for the implementation of our LF-DFnet. [*BasicLFSR*](https://github.com/ZhengyuLiang24/BasicLFSR) is an open-source and easy-to-use toolbox for LF image SR. A number of milestone methods have been implemented (retrained) in a unified framework in [*BasicLFSR*](https://github.com/ZhengyuLiang24/BasicLFSR).
+#### News: We recommend our newly-released repository [*BasicLFSR*](https://github.com/ZhengyuLiang24/BasicLFSR) for the implementation of our LF-InterNet. [*BasicLFSR*](https://github.com/ZhengyuLiang24/BasicLFSR) is an open-source and easy-to-use toolbox for LF image SR. A number of milestone methods have been implemented (retrained) in a unified framework in [*BasicLFSR*](https://github.com/ZhengyuLiang24/BasicLFSR).
 <br>
 
 ## Network Architecture:
